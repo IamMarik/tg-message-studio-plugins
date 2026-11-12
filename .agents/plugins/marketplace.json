@@ -1,0 +1,20 @@
+{
+  "name": "message-studio",
+  "interface": {
+    "displayName": "Message Studio"
+  },
+  "plugins": [
+    {
+      "name": "message-studio",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "message-studio",
+  "version": "0.1.0",
+  "description": "Format Telegram Rich Messages with tg-rich and preview them in Message Studio.",
+  "author": {
+    "name": "IamMarik",
+    "url": "https://github.com/IamMarik"
+  },
+  "homepage": "https://t.me/ui_lab_bot",
+  "repository": "https://github.com/IamMarik/tg-message-studio-plugins",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Message Studio",
+    "shortDescription": "Format and preview Telegram Rich Messages",
+    "developerName": "IamMarik",
+    "category": "Productivity"
+  }
+}

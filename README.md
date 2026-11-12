@@ -1,4 +1,4 @@
-# Telegram UI Lab — Telegram Message Formatting & Preview
+# Message Studio — Telegram Message Formatting & Preview
 
 Telegram UI Lab is a Telegram bot for previewing HTML, MarkdownV2, Rich Markdown and Rich HTML messages in a real chat.
 Use the **tg-rich** AI skill to prepare Rich Messages with headings, tables, images and buttons,
@@ -42,10 +42,26 @@ defaults to Rich HTML when you do not specify a format. The skill needs no API k
 
 ### Install in Codex
 
-Send this request **in Codex chat**:
+Add the marketplace from a terminal:
+
+```bash
+codex plugin marketplace add IamMarik/tg-message-studio-plugins
+```
+
+In Codex, open **Plugins**, select **Message Studio**, and choose **Install**. In Codex CLI,
+you can also run `codex plugin add message-studio@message-studio`.
+The plugin includes the `tg-rich` skill, shown as **Telegram Rich**, and the Message Studio MCP server.
+
+To connect MCP, open [@ui_lab_bot](https://t.me/ui_lab_bot) in Telegram, run `/mcp`, and create
+a personal token. Set it as `TG_UI_LAB_MCP_TOKEN` in the environment of the process that starts
+Codex. Restart Codex after setting or rotating the token. Keep the token out of project files
+and agent chats. Ask Codex to read `tg-ui-lab://guide` to check the connection.
+
+The skill can format messages before you connect MCP. To install the skill by itself, send this
+request **in Codex chat**:
 
 ```text
-$skill-installer Install the skill from https://github.com/IamMarik/telegram-ui-lab-assets/tree/main/skills/tg-rich
+$skill-installer Install the skill from https://github.com/IamMarik/tg-message-studio-plugins/tree/main/skills/tg-rich
 ```
 
 Then use it with your own text or brief, for example:
@@ -56,7 +72,7 @@ $tg-rich Format a Telegram announcement: our design workshop starts Friday at 18
 
 Other AI assistants with skill support can install the [tg-rich folder](skills/tg-rich) using
 their own installation workflow. For a single conversation, give an assistant that can read links
-the [raw SKILL.md](https://raw.githubusercontent.com/IamMarik/telegram-ui-lab-assets/main/skills/tg-rich/SKILL.md)
+the [raw SKILL.md](https://raw.githubusercontent.com/IamMarik/tg-message-studio-plugins/main/skills/tg-rich/SKILL.md)
 and ask it to follow the instructions with your text.
 
 Copy the contents of the generated code block and send them to
@@ -125,7 +141,7 @@ Telegram JSON is available when you need the received message structure.
 
 ## Public resources
 
-This repository contains the **tg-rich skill** and public media used by Telegram UI Lab.
+This repository contains the **Message Studio Codex plugin**, the **tg-rich skill**, and public media.
 Use the bot at **[t.me/ui_lab_bot](https://t.me/ui_lab_bot)** to preview messages.
 
 - [`skills/tg-rich/`](skills/tg-rich) — portable Rich Message formatting instructions and Codex display metadata.
