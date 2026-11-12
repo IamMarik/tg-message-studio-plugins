@@ -55,7 +55,8 @@ The plugin includes the `tg-rich` skill, shown as **Telegram Rich**, and the Mes
 To connect MCP, open [@ui_lab_bot](https://t.me/ui_lab_bot) in Telegram, run `/mcp`, and create
 a personal token. Set it as `TG_MESSAGE_STUDIO_MCP_TOKEN` in the environment of the process that starts
 Codex. Restart Codex after setting or rotating the token. Keep the token out of project files
-and agent chats. Ask Codex to read `tg-ui-lab://guide` to check the connection.
+and agent chats. To check the connection, ask Codex to read the guide advertised by Message Studio.
+Its URI is `tg-message-studio://guide` on updated servers and `tg-ui-lab://guide` on older servers.
 
 If you set up version 0.1.0, use the same token with the new variable name. To update the package,
 run `codex plugin marketplace upgrade message-studio`, then install Message Studio again.
