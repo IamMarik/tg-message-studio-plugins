@@ -2,7 +2,7 @@
   "mcpServers": {
     "tg_ui_lab": {
       "url": "https://message-studio.aevo.pro/mcp",
-      "bearer_token_env_var": "TG_UI_LAB_MCP_TOKEN"
+      "bearer_token_env_var": "TG_MESSAGE_STUDIO_MCP_TOKEN"
     }
   }
 }
